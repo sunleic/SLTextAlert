@@ -1,0 +1,16 @@
+PODS:
+  - SLTextAlert (0.1.0)
+
+DEPENDENCIES:
+  - SLTextAlert (from `../`)
+
+EXTERNAL SOURCES:
+  SLTextAlert:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SLTextAlert: 95b8519bb864e62692e847ea10acae99d37fced7
+
+PODFILE CHECKSUM: cc90313af61e5230ced168781f1dd279c9456998
+
+COCOAPODS: 1.11.3

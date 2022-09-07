@@ -1,0 +1,6 @@
+framework module SLTextAlert {
+  umbrella header "SLTextAlert-umbrella.h"
+
+  export *
+  module * { export * }
+}

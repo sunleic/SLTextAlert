@@ -39,8 +39,8 @@
 /* Begin PBXFileReference section */
 		2A48E799D4E9688C8E4165D9 /* Pods_SLTextAlert_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SLTextAlert_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		320FBEE6325E3BDBA8B0BBB5 /* Pods-SLTextAlert_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLTextAlert_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SLTextAlert_Tests/Pods-SLTextAlert_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		3729164BA5553CCC861DFB0B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		43B432444468A68FB67ADB2A /* SLTextAlert.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SLTextAlert.podspec; path = ../SLTextAlert.podspec; sourceTree = "<group>"; };
+		3729164BA5553CCC861DFB0B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		43B432444468A68FB67ADB2A /* SLTextAlert.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SLTextAlert.podspec; path = ../SLTextAlert.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* SLTextAlert_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLTextAlert_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,7 +61,7 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7BC7DC00F9359CEF165F1B4B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7BC7DC00F9359CEF165F1B4B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87846CCBCC126520F38F289B /* Pods_SLTextAlert_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SLTextAlert_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A75873007EC834DAA89CFD6C /* Pods-SLTextAlert_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLTextAlert_Tests.release.xcconfig"; path = "Target Support Files/Pods-SLTextAlert_Tests/Pods-SLTextAlert_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -193,7 +193,6 @@
 				320FBEE6325E3BDBA8B0BBB5 /* Pods-SLTextAlert_Tests.debug.xcconfig */,
 				A75873007EC834DAA89CFD6C /* Pods-SLTextAlert_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,7 +247,11 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = sunlei;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = S3LGY6THQ5;
+					};
 					6003F5AD195388D20070C39A = {
+						DevelopmentTeam = S3LGY6THQ5;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -258,6 +261,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -494,6 +498,7 @@
 			baseConfigurationReference = C7B9FFB030D6856ECE14DDD2 /* Pods-SLTextAlert_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S3LGY6THQ5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SLTextAlert/SLTextAlert-Prefix.pch";
 				INFOPLIST_FILE = "SLTextAlert/SLTextAlert-Info.plist";
@@ -510,6 +515,7 @@
 			baseConfigurationReference = E9B63990F4C95A3A9101947B /* Pods-SLTextAlert_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S3LGY6THQ5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SLTextAlert/SLTextAlert-Prefix.pch";
 				INFOPLIST_FILE = "SLTextAlert/SLTextAlert-Info.plist";
@@ -526,6 +532,7 @@
 			baseConfigurationReference = 320FBEE6325E3BDBA8B0BBB5 /* Pods-SLTextAlert_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = S3LGY6THQ5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -551,6 +558,7 @@
 			baseConfigurationReference = A75873007EC834DAA89CFD6C /* Pods-SLTextAlert_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = S3LGY6THQ5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
