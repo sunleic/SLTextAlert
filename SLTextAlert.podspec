@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/sunlei/SLTextAlert'
+  s.homepage         = 'https://github.com/sunleic/SLTextAlert'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'sunlei' => 'sunlei_1030@126.com' }
-  s.source           = { :git => 'https://github.com/sunlei/SLTextAlert.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/sunleic/SLTextAlert.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
