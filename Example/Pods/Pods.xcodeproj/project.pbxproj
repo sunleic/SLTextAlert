@@ -7,30 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F40F1ACC28CD556B80F4E1E34785B6C /* SLAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 925B8C89FF9A5D328E7C33A4A3D2F3AE /* SLAlertViewController.m */; };
+		03154A1C2F614BF391CCE63775817E1A /* SLTextAlert-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 419C74BEE4F2CB27943DA0767605D5A1 /* SLTextAlert-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B8837E86C88586679865E090E2E7B33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		58D7961FEDA96F6E3E5C8DD6FC6191AB /* SLAlertAttributeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E72407D76686F1CB4CDD544139B20016 /* SLAlertAttributeModel.m */; };
-		5A3223B29F71A7BB2D0E68C649DF6095 /* SLTextAlert-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AB248CE5D8E269B004B4E3F78C60705 /* SLTextAlert-dummy.m */; };
 		5E06E416C38D64E023B56DAB629A287B /* Pods-SLTextAlert_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE54FA5349526EB46FFC09D4C7790A9 /* Pods-SLTextAlert_Tests-dummy.m */; };
 		6956571A88D2F659A2179100F2710470 /* Pods-SLTextAlert_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3910BED0E97F64B2FB7BCE925D0F98E2 /* Pods-SLTextAlert_Example-dummy.m */; };
-		6D154F801668EFC6AE5A419CBA4AC9F4 /* SLAlertViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B341FC0EEECF532623BD48B254790029 /* SLAlertViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D65771F503C701CB170A219944055C5 /* Pods-SLTextAlert_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 748FE4CF05E6A3E9C688D9F93A7518C9 /* Pods-SLTextAlert_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		932CD695EF05DECC71E54CBC5109042A /* SLTextAlert-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 79A799FEB5B9F9CA15162CA33E38EB50 /* SLTextAlert-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A154D54680B1A26750B3DF38D7A3D3E4 /* SLAlertAttributeModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2333078B2D47DC721EC029B28E15BB6B /* SLAlertAttributeModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81EA0E9FE95B949ADF476AAEF132A54A /* SLTextAlert-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A644E0F04B728535CF6B997BEFF7ADF2 /* SLTextAlert-dummy.m */; };
+		91B88CCBD63E865A78BCE7A80958FC44 /* SLAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D84764D84C378FCE2A51A75F61DEA03 /* SLAlertViewController.m */; };
+		A602CABABC8CD86D130A6ACB768D9AE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		B522D7BE909CDC8B4DA93D2157CFD016 /* SLAlertViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DEF0F5ED7E9C1E43F29B7F4CFC394E7 /* SLAlertViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C13D325458229F656438EED32990B940 /* Pods-SLTextAlert_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FA63B0198299B3B9CDA76C3D5749BF9 /* Pods-SLTextAlert_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D8FA7164BB580F2848C4A3B05F978B74 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		DB29CA00ED9B122AEEEE2ED775E82810 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0152B9294D08C54B60BAB6B5ACB9E937 /* PBXContainerItemProxy */ = {
+		5E4B7E42BD1238C63FCDB39CB5453C79 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 389C934ABF6F0DC9D4EDCB30D62C0212;
 			remoteInfo = "Pods-SLTextAlert_Example";
 		};
-		8A4BAA8543A011AFE2095CAD9F4F67D1 /* PBXContainerItemProxy */ = {
+		B8EF562A428C88603A44278D61855D7D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -41,49 +39,47 @@
 
 /* Begin PBXFileReference section */
 		057516233A459246363E54440B92D923 /* Pods-SLTextAlert_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SLTextAlert_Tests.modulemap"; sourceTree = "<group>"; };
-		06C17F8DE029FF1E17BAB7647E205049 /* SLTextAlert.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SLTextAlert.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		111EDBE51613030AF28D691DF070E0BE /* SLTextAlert-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SLTextAlert-Info.plist"; sourceTree = "<group>"; };
-		130E7534869C2F42652E5ACD7BDCFA51 /* SLTextAlert.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SLTextAlert.modulemap; sourceTree = "<group>"; };
+		0F59980FC1A6A75C770758B644F180C0 /* SLTextAlert.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SLTextAlert.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		117A0A4CE820EDC7CC8FCD2697CA92D4 /* SLTextAlert.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SLTextAlert.modulemap; sourceTree = "<group>"; };
 		14EE3148B6BA991F61C778C0429472F0 /* Pods-SLTextAlert_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SLTextAlert_Example-Info.plist"; sourceTree = "<group>"; };
 		186F751177602136F1B4E04093679493 /* Pods-SLTextAlert_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SLTextAlert_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		2333078B2D47DC721EC029B28E15BB6B /* SLAlertAttributeModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SLAlertAttributeModel.h; path = SLTextAlert/Classes/SLAlertAttributeModel.h; sourceTree = "<group>"; };
+		1EA2730E0281A3786C6886E4BD07289A /* SLTextAlert-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SLTextAlert-Info.plist"; sourceTree = "<group>"; };
 		25E9EC6884C030283830876D51B95A58 /* Pods-SLTextAlert_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SLTextAlert_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		280EF5AE19E976B6CF18AC04618551FA /* Pods-SLTextAlert_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SLTextAlert_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2C0D781F6F2850B6C17DB21842A0C3CD /* SLTextAlert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SLTextAlert.debug.xcconfig; sourceTree = "<group>"; };
+		2D84764D84C378FCE2A51A75F61DEA03 /* SLAlertViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SLAlertViewController.m; path = SLTextAlert/Classes/SLAlertViewController.m; sourceTree = "<group>"; };
 		3910BED0E97F64B2FB7BCE925D0F98E2 /* Pods-SLTextAlert_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SLTextAlert_Example-dummy.m"; sourceTree = "<group>"; };
-		3AB248CE5D8E269B004B4E3F78C60705 /* SLTextAlert-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SLTextAlert-dummy.m"; sourceTree = "<group>"; };
+		419C74BEE4F2CB27943DA0767605D5A1 /* SLTextAlert-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SLTextAlert-umbrella.h"; sourceTree = "<group>"; };
+		474BA7EB4331553611059286E3DAFD48 /* SLTextAlert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SLTextAlert.debug.xcconfig; sourceTree = "<group>"; };
 		482E93D15AAB2C2B6E9288CD53DC4CCE /* Pods-SLTextAlert_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SLTextAlert_Example.modulemap"; sourceTree = "<group>"; };
 		4FA63B0198299B3B9CDA76C3D5749BF9 /* Pods-SLTextAlert_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SLTextAlert_Tests-umbrella.h"; sourceTree = "<group>"; };
 		5AE54FA5349526EB46FFC09D4C7790A9 /* Pods-SLTextAlert_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SLTextAlert_Tests-dummy.m"; sourceTree = "<group>"; };
+		5DEF0F5ED7E9C1E43F29B7F4CFC394E7 /* SLAlertViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SLAlertViewController.h; path = SLTextAlert/Classes/SLAlertViewController.h; sourceTree = "<group>"; };
 		6D3BB24827E719E1CF35428F3655B4B0 /* Pods-SLTextAlert_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SLTextAlert_Tests"; path = Pods_SLTextAlert_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		748FE4CF05E6A3E9C688D9F93A7518C9 /* Pods-SLTextAlert_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SLTextAlert_Example-umbrella.h"; sourceTree = "<group>"; };
-		77782D4B90E16A0C96C698AF858B051D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		79A799FEB5B9F9CA15162CA33E38EB50 /* SLTextAlert-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SLTextAlert-umbrella.h"; sourceTree = "<group>"; };
 		7C237A3ACB27508E1E6BC9FE27002AB3 /* Pods-SLTextAlert_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SLTextAlert_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		925B8C89FF9A5D328E7C33A4A3D2F3AE /* SLAlertViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SLAlertViewController.m; path = SLTextAlert/Classes/SLAlertViewController.m; sourceTree = "<group>"; };
+		8CDD6AED8346B10E5C044CABF9E81EA7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AC4D31AE2408F21229B9C7D4547144E3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		B341FC0EEECF532623BD48B254790029 /* SLAlertViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SLAlertViewController.h; path = SLTextAlert/Classes/SLAlertViewController.h; sourceTree = "<group>"; };
+		A644E0F04B728535CF6B997BEFF7ADF2 /* SLTextAlert-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SLTextAlert-dummy.m"; sourceTree = "<group>"; };
 		B7119CEAABFEE17F8BC53A6DCAADCB71 /* Pods-SLTextAlert_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SLTextAlert_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C64B95217F85D4DE7E47E8794B0B1D6B /* SLTextAlert-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SLTextAlert-prefix.pch"; sourceTree = "<group>"; };
+		BBCF167155229DBDB9A6181E6E663541 /* SLTextAlert-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SLTextAlert-prefix.pch"; sourceTree = "<group>"; };
+		CB028271F047D0396F4E19521862E065 /* SLTextAlert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SLTextAlert.release.xcconfig; sourceTree = "<group>"; };
 		D788B743DB5BAE78698C392620A156AE /* Pods-SLTextAlert_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SLTextAlert_Example-frameworks.sh"; sourceTree = "<group>"; };
 		D8798A7BE769E808C82A7C6F666059D9 /* Pods-SLTextAlert_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SLTextAlert_Tests-Info.plist"; sourceTree = "<group>"; };
 		D9AA486DA20C5951B0C281BE26921E56 /* Pods-SLTextAlert_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SLTextAlert_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E71F998EE2BA079BFE9279A3FC195801 /* Pods-SLTextAlert_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SLTextAlert_Example.release.xcconfig"; sourceTree = "<group>"; };
-		E72407D76686F1CB4CDD544139B20016 /* SLAlertAttributeModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SLAlertAttributeModel.m; path = SLTextAlert/Classes/SLAlertAttributeModel.m; sourceTree = "<group>"; };
 		E729E0C5A2E599B607078EBF81244853 /* Pods-SLTextAlert_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SLTextAlert_Example"; path = Pods_SLTextAlert_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E86447C8D4F92EB020ADFB7F04284FF1 /* Pods-SLTextAlert_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SLTextAlert_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		EB0330B88A77900937731B30815D5135 /* SLTextAlert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SLTextAlert.release.xcconfig; sourceTree = "<group>"; };
+		F19E6686CAAC0E15F4575765A7E6FE24 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		F22F5C95CD8F4685035C3B235267397B /* SLTextAlert */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SLTextAlert; path = SLTextAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		87A2F2C81A1EABB91F6D73096F1D7F8D /* Frameworks */ = {
+		058F9A7E5CA316B736491D395E833647 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB29CA00ED9B122AEEEE2ED775E82810 /* Foundation.framework in Frameworks */,
+				A602CABABC8CD86D130A6ACB768D9AE7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,37 +102,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2CB10607A41BBD9ABC644A942C33B4C1 /* Development Pods */ = {
+		3B2BB4601E0037F3B2803D9F24C3919F /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				80876E1D6303FC53FA5BF076C81578A4 /* SLTextAlert */,
+				4649A2692F0A55F6039C3BF1AD30D5FB /* SLTextAlert */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		37BCAA1388F99183C34D1D9148FA3573 /* Pod */ = {
+		4649A2692F0A55F6039C3BF1AD30D5FB /* SLTextAlert */ = {
 			isa = PBXGroup;
 			children = (
-				AC4D31AE2408F21229B9C7D4547144E3 /* LICENSE */,
-				77782D4B90E16A0C96C698AF858B051D /* README.md */,
-				06C17F8DE029FF1E17BAB7647E205049 /* SLTextAlert.podspec */,
+				5DEF0F5ED7E9C1E43F29B7F4CFC394E7 /* SLAlertViewController.h */,
+				2D84764D84C378FCE2A51A75F61DEA03 /* SLAlertViewController.m */,
+				FF394D72B2151C293C7CCD961D6D8224 /* Pod */,
+				B2FB110C6487CCB119CD15AC4BCF2FBF /* Support Files */,
 			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		4D746ECA63D0B32D41AF561386445CBF /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				130E7534869C2F42652E5ACD7BDCFA51 /* SLTextAlert.modulemap */,
-				3AB248CE5D8E269B004B4E3F78C60705 /* SLTextAlert-dummy.m */,
-				111EDBE51613030AF28D691DF070E0BE /* SLTextAlert-Info.plist */,
-				C64B95217F85D4DE7E47E8794B0B1D6B /* SLTextAlert-prefix.pch */,
-				79A799FEB5B9F9CA15162CA33E38EB50 /* SLTextAlert-umbrella.h */,
-				2C0D781F6F2850B6C17DB21842A0C3CD /* SLTextAlert.debug.xcconfig */,
-				EB0330B88A77900937731B30815D5135 /* SLTextAlert.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/SLTextAlert";
+			name = SLTextAlert;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -157,18 +140,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		80876E1D6303FC53FA5BF076C81578A4 /* SLTextAlert */ = {
+		B2FB110C6487CCB119CD15AC4BCF2FBF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2333078B2D47DC721EC029B28E15BB6B /* SLAlertAttributeModel.h */,
-				E72407D76686F1CB4CDD544139B20016 /* SLAlertAttributeModel.m */,
-				B341FC0EEECF532623BD48B254790029 /* SLAlertViewController.h */,
-				925B8C89FF9A5D328E7C33A4A3D2F3AE /* SLAlertViewController.m */,
-				37BCAA1388F99183C34D1D9148FA3573 /* Pod */,
-				4D746ECA63D0B32D41AF561386445CBF /* Support Files */,
+				117A0A4CE820EDC7CC8FCD2697CA92D4 /* SLTextAlert.modulemap */,
+				A644E0F04B728535CF6B997BEFF7ADF2 /* SLTextAlert-dummy.m */,
+				1EA2730E0281A3786C6886E4BD07289A /* SLTextAlert-Info.plist */,
+				BBCF167155229DBDB9A6181E6E663541 /* SLTextAlert-prefix.pch */,
+				419C74BEE4F2CB27943DA0767605D5A1 /* SLTextAlert-umbrella.h */,
+				474BA7EB4331553611059286E3DAFD48 /* SLTextAlert.debug.xcconfig */,
+				CB028271F047D0396F4E19521862E065 /* SLTextAlert.release.xcconfig */,
 			);
-			name = SLTextAlert;
-			path = ../..;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SLTextAlert";
 			sourceTree = "<group>";
 		};
 		B55D9A7F50E745A0E2D35387B964D7BA /* Targets Support Files */ = {
@@ -201,7 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				2CB10607A41BBD9ABC644A942C33B4C1 /* Development Pods */,
+				3B2BB4601E0037F3B2803D9F24C3919F /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				805DE1326A4F94CBF70578B0023CBD6F /* Products */,
 				B55D9A7F50E745A0E2D35387B964D7BA /* Targets Support Files */,
@@ -232,6 +216,16 @@
 			path = "Target Support Files/Pods-SLTextAlert_Tests";
 			sourceTree = "<group>";
 		};
+		FF394D72B2151C293C7CCD961D6D8224 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F19E6686CAAC0E15F4575765A7E6FE24 /* LICENSE */,
+				8CDD6AED8346B10E5C044CABF9E81EA7 /* README.md */,
+				0F59980FC1A6A75C770758B644F180C0 /* SLTextAlert.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -243,21 +237,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F4DD14C4A92427740C2E6A40D2D1CAE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B522D7BE909CDC8B4DA93D2157CFD016 /* SLAlertViewController.h in Headers */,
+				03154A1C2F614BF391CCE63775817E1A /* SLTextAlert-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		317ED0B01920EEBE140BEABDCE6E356A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C13D325458229F656438EED32990B940 /* Pods-SLTextAlert_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		614DB9F989A8EE51AE8ED759D4F88246 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A154D54680B1A26750B3DF38D7A3D3E4 /* SLAlertAttributeModel.h in Headers */,
-				6D154F801668EFC6AE5A419CBA4AC9F4 /* SLAlertViewController.h in Headers */,
-				932CD695EF05DECC71E54CBC5109042A /* SLTextAlert-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +269,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				4D11818A52E5F2150744D8B24FC97E5B /* PBXTargetDependency */,
+				F161442D4582A5097B3A23BE30959659 /* PBXTargetDependency */,
 			);
 			name = "Pods-SLTextAlert_Example";
 			productName = Pods_SLTextAlert_Example;
@@ -295,7 +288,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				1123FAF51D053980318E392412F6B19F /* PBXTargetDependency */,
+				571E703D0DBD3E4E50072DF85B6B39BE /* PBXTargetDependency */,
 			);
 			name = "Pods-SLTextAlert_Tests";
 			productName = Pods_SLTextAlert_Tests;
@@ -304,12 +297,12 @@
 		};
 		DECF6A8BB3AC042D2CB733BAD74A9077 /* SLTextAlert */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D2BF910D5497906B350C4E8771BE7F67 /* Build configuration list for PBXNativeTarget "SLTextAlert" */;
+			buildConfigurationList = 3B9E0B73E648EBB931404D0E6FBA696B /* Build configuration list for PBXNativeTarget "SLTextAlert" */;
 			buildPhases = (
-				614DB9F989A8EE51AE8ED759D4F88246 /* Headers */,
-				2726CFDDF2738FBDB1B81479836AAF8A /* Sources */,
-				87A2F2C81A1EABB91F6D73096F1D7F8D /* Frameworks */,
-				481D8E8633B12D2463A8779FFA343C99 /* Resources */,
+				1F4DD14C4A92427740C2E6A40D2D1CAE /* Headers */,
+				01A020D29FB7FCCCC570A871309C6C94 /* Sources */,
+				058F9A7E5CA316B736491D395E833647 /* Frameworks */,
+				9E52924D41733CEC86F5C367E72C56BF /* Resources */,
 			);
 			buildRules = (
 			);
@@ -350,13 +343,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		481D8E8633B12D2463A8779FFA343C99 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		49B3D543D760C9874E15FF56C46CB78E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -371,16 +357,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9E52924D41733CEC86F5C367E72C56BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2726CFDDF2738FBDB1B81479836AAF8A /* Sources */ = {
+		01A020D29FB7FCCCC570A871309C6C94 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58D7961FEDA96F6E3E5C8DD6FC6191AB /* SLAlertAttributeModel.m in Sources */,
-				2F40F1ACC28CD556B80F4E1E34785B6C /* SLAlertViewController.m in Sources */,
-				5A3223B29F71A7BB2D0E68C649DF6095 /* SLTextAlert-dummy.m in Sources */,
+				91B88CCBD63E865A78BCE7A80958FC44 /* SLAlertViewController.m in Sources */,
+				81EA0E9FE95B949ADF476AAEF132A54A /* SLTextAlert-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,21 +395,51 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1123FAF51D053980318E392412F6B19F /* PBXTargetDependency */ = {
+		571E703D0DBD3E4E50072DF85B6B39BE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-SLTextAlert_Example";
 			target = 389C934ABF6F0DC9D4EDCB30D62C0212 /* Pods-SLTextAlert_Example */;
-			targetProxy = 0152B9294D08C54B60BAB6B5ACB9E937 /* PBXContainerItemProxy */;
+			targetProxy = 5E4B7E42BD1238C63FCDB39CB5453C79 /* PBXContainerItemProxy */;
 		};
-		4D11818A52E5F2150744D8B24FC97E5B /* PBXTargetDependency */ = {
+		F161442D4582A5097B3A23BE30959659 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SLTextAlert;
 			target = DECF6A8BB3AC042D2CB733BAD74A9077 /* SLTextAlert */;
-			targetProxy = 8A4BAA8543A011AFE2095CAD9F4F67D1 /* PBXContainerItemProxy */;
+			targetProxy = B8EF562A428C88603A44278D61855D7D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		08F8F8B54C98E8B7C7D95D6723EC4C7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 474BA7EB4331553611059286E3DAFD48 /* SLTextAlert.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SLTextAlert/SLTextAlert-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SLTextAlert/SLTextAlert-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SLTextAlert/SLTextAlert.modulemap";
+				PRODUCT_MODULE_NAME = SLTextAlert;
+				PRODUCT_NAME = SLTextAlert;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		1FE4720843F6689EB72B75EF68D44A28 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E71F998EE2BA079BFE9279A3FC195801 /* Pods-SLTextAlert_Example.release.xcconfig */;
@@ -451,37 +473,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		2B6B28C2DB36AD8BBAF50F26FEDE7728 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C0D781F6F2850B6C17DB21842A0C3CD /* SLTextAlert.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SLTextAlert/SLTextAlert-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SLTextAlert/SLTextAlert-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SLTextAlert/SLTextAlert.modulemap";
-				PRODUCT_MODULE_NAME = SLTextAlert;
-				PRODUCT_NAME = SLTextAlert;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		555C16285D587D0D4D0247A179FE383B /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -645,6 +636,37 @@
 			};
 			name = Debug;
 		};
+		BD536CE4B7E3F8C8BAA54B3258094C95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB028271F047D0396F4E19521862E065 /* SLTextAlert.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SLTextAlert/SLTextAlert-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SLTextAlert/SLTextAlert-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SLTextAlert/SLTextAlert.modulemap";
+				PRODUCT_MODULE_NAME = SLTextAlert;
+				PRODUCT_NAME = SLTextAlert;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -711,38 +733,6 @@
 			};
 			name = Debug;
 		};
-		D2C35C5201D7D1E125EDF9260B7B776D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB0330B88A77900937731B30815D5135 /* SLTextAlert.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SLTextAlert/SLTextAlert-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SLTextAlert/SLTextAlert-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SLTextAlert/SLTextAlert.modulemap";
-				PRODUCT_MODULE_NAME = SLTextAlert;
-				PRODUCT_NAME = SLTextAlert;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -751,6 +741,15 @@
 			buildConfigurations = (
 				8B0692D529E092FB5857E7C87217511F /* Debug */,
 				555C16285D587D0D4D0247A179FE383B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B9E0B73E648EBB931404D0E6FBA696B /* Build configuration list for PBXNativeTarget "SLTextAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08F8F8B54C98E8B7C7D95D6723EC4C7F /* Debug */,
+				BD536CE4B7E3F8C8BAA54B3258094C95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -769,15 +768,6 @@
 			buildConfigurations = (
 				631978C28B9B4BBE61ECDCF292883293 /* Debug */,
 				1FE4720843F6689EB72B75EF68D44A28 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D2BF910D5497906B350C4E8771BE7F67 /* Build configuration list for PBXNativeTarget "SLTextAlert" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2B6B28C2DB36AD8BBAF50F26FEDE7728 /* Debug */,
-				D2C35C5201D7D1E125EDF9260B7B776D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

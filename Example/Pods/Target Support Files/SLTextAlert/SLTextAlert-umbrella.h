@@ -10,7 +10,6 @@
 #endif
 #endif
 
-#import "SLAlertAttributeModel.h"
 #import "SLAlertViewController.h"
 
 FOUNDATION_EXPORT double SLTextAlertVersionNumber;

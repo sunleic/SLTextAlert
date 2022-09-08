@@ -20,18 +20,49 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RtN-aD-Xrp">
-                                <rect key="frame" x="154" y="318" width="67" height="31"/>
+                                <rect key="frame" x="103" y="100" width="169" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="点我啊"/>
+                                <buttonConfiguration key="configuration" style="plain" title="基础样式2btn（alert）"/>
                                 <connections>
-                                    <action selector="showAlertView:" destination="whP-gf-Uak" eventType="touchUpInside" id="nto-aC-fef"/>
+                                    <action selector="alert2Btns:" destination="whP-gf-Uak" eventType="touchUpInside" id="1DW-md-9xL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYp-tT-zOh">
+                                <rect key="frame" x="103" y="161" width="169" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="基础样式3btn（alert）"/>
+                                <connections>
+                                    <action selector="alert3Btns:" destination="whP-gf-Uak" eventType="touchUpInside" id="nXr-en-tU9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQI-5p-b3k">
+                                <rect key="frame" x="139.5" y="222" width="96" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="富文本样式"/>
+                                <connections>
+                                    <action selector="attributeStringAction:" destination="whP-gf-Uak" eventType="touchUpInside" id="yPl-15-UMx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pp0-K4-W1O">
+                                <rect key="frame" x="132" y="318" width="111" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="原生（alert）"/>
+                                <connections>
+                                    <action selector="alertAction:" destination="whP-gf-Uak" eventType="touchUpInside" id="o6E-Ud-YtO"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="RtN-aD-Xrp" firstAttribute="centerY" secondItem="TpU-gO-2f1" secondAttribute="centerY" id="7u7-4V-Ivy"/>
+                            <constraint firstItem="XYp-tT-zOh" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="3VQ-PQ-ouw"/>
+                            <constraint firstItem="nQI-5p-b3k" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="PXv-68-Ixa"/>
                             <constraint firstItem="RtN-aD-Xrp" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="UkU-rd-wHs"/>
+                            <constraint firstItem="pp0-K4-W1O" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="W8G-VE-o4L"/>
+                            <constraint firstItem="XYp-tT-zOh" firstAttribute="top" secondItem="RtN-aD-Xrp" secondAttribute="bottom" constant="30" id="Yih-Ci-evU"/>
+                            <constraint firstItem="nQI-5p-b3k" firstAttribute="top" secondItem="XYp-tT-zOh" secondAttribute="bottom" constant="30" id="jLS-yf-fZn"/>
+                            <constraint firstItem="RtN-aD-Xrp" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="100" id="msV-Zw-peL"/>
+                            <constraint firstItem="XYp-tT-zOh" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="uH5-4A-azo"/>
+                            <constraint firstItem="pp0-K4-W1O" firstAttribute="centerY" secondItem="TpU-gO-2f1" secondAttribute="centerY" id="vdK-85-AMy"/>
                         </constraints>
                     </view>
                 </viewController>
