@@ -39,7 +39,7 @@
 
 /* Begin PBXFileReference section */
 		057516233A459246363E54440B92D923 /* Pods-SLTextAlert_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SLTextAlert_Tests.modulemap"; sourceTree = "<group>"; };
-		0F59980FC1A6A75C770758B644F180C0 /* SLTextAlert.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SLTextAlert.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0F59980FC1A6A75C770758B644F180C0 /* SLTextAlert.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SLTextAlert.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		117A0A4CE820EDC7CC8FCD2697CA92D4 /* SLTextAlert.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SLTextAlert.modulemap; sourceTree = "<group>"; };
 		14EE3148B6BA991F61C778C0429472F0 /* Pods-SLTextAlert_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SLTextAlert_Example-Info.plist"; sourceTree = "<group>"; };
 		186F751177602136F1B4E04093679493 /* Pods-SLTextAlert_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SLTextAlert_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -58,8 +58,8 @@
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		748FE4CF05E6A3E9C688D9F93A7518C9 /* Pods-SLTextAlert_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SLTextAlert_Example-umbrella.h"; sourceTree = "<group>"; };
 		7C237A3ACB27508E1E6BC9FE27002AB3 /* Pods-SLTextAlert_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SLTextAlert_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		8CDD6AED8346B10E5C044CABF9E81EA7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8CDD6AED8346B10E5C044CABF9E81EA7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A644E0F04B728535CF6B997BEFF7ADF2 /* SLTextAlert-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SLTextAlert-dummy.m"; sourceTree = "<group>"; };
 		B7119CEAABFEE17F8BC53A6DCAADCB71 /* Pods-SLTextAlert_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SLTextAlert_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BBCF167155229DBDB9A6181E6E663541 /* SLTextAlert-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SLTextAlert-prefix.pch"; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 		E71F998EE2BA079BFE9279A3FC195801 /* Pods-SLTextAlert_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SLTextAlert_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E729E0C5A2E599B607078EBF81244853 /* Pods-SLTextAlert_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SLTextAlert_Example"; path = Pods_SLTextAlert_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E86447C8D4F92EB020ADFB7F04284FF1 /* Pods-SLTextAlert_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SLTextAlert_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		F19E6686CAAC0E15F4575765A7E6FE24 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F19E6686CAAC0E15F4575765A7E6FE24 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		F22F5C95CD8F4685035C3B235267397B /* SLTextAlert */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SLTextAlert; path = SLTextAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -596,8 +596,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

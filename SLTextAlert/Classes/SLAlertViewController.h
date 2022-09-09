@@ -2,8 +2,8 @@
 //  SLAlertViewController.h
 //  自定义警告框
 //
-//  Created by fengye on 16/8/24.
-//  Copyright © 2016年 fengye. All rights reserved.
+//  Created by sunlei on 09/07/2022.
+//  Copyright (c) 2022 sunlei. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -51,7 +51,7 @@ typedef void(^SLAttributeClick)(NSRange range);
 /// @param title 标题
 /// @param message 消息内容
 /// @param preferredStyle 弹出框样式
-+ (instancetype)alertControllerWithTitle:(NSString *)title message:(NSString *)message preferredStyle:(SLAlertControllerStyle)preferredStyle;
++ (instancetype)alertControllerWithTitle:(NSString *)title message:(NSString *)message alertStyle:(SLAlertControllerStyle)preferredStyle;
 
 /// 添加动作
 /// @param action 动作对象

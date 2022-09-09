@@ -2,16 +2,16 @@
 //  SLAlertViewController.m
 //  自定义警告框
 //
-//  Created by fengye on 16/8/24.
-//  Copyright © 2016年 fengye. All rights reserved.
+//  Created by sunlei on 09/07/2022.
+//  Copyright (c) 2022 sunlei. All rights reserved.
 //
 
 #import "SLAlertViewController.h"
 
-#define kDefaultButtonColor [UIColor colorWithRed:0.09 green:0.52 blue:1.00 alpha:1.00]
-#define kDefaultTextColor [UIColor colorWithRed:94/255.0 green:96/255.0 blue:102/255.0 alpha:1]
-#define kTitleFontSize 18
-#define kMessageFontSize 16
+//#define kDefaultButtonColor [UIColor colorWithRed:0.09 green:0.52 blue:1.00 alpha:1.00]
+//#define kDefaultTextColor [UIColor colorWithRed:94/255.0 green:96/255.0 blue:102/255.0 alpha:1]
+//#define kTitleFontSize 18
+//#define kMessageFontSize 16
 
 @implementation SLAlertAttributeModel
 
@@ -50,6 +50,7 @@
 + (instancetype)actionWithTitle:(NSString *)title handler:(void (^)(SLAlertAction *action))handler {
     SLAlertAction *instance = [SLAlertAction new];
     instance -> _title = title;
+    instance.enabled = YES;
     instance.actionHandler = handler;
     return instance;
 }
@@ -64,6 +65,14 @@
     UIEdgeInsets _contentMargin;
     CGFloat _contentViewWidth;
     CGFloat _buttonHeight;
+    
+    UIColor *_titleColor;
+    CGFloat _titleFontSize;
+    UIColor *_messageColor;
+    CGFloat _messageFontSize;
+    
+    UIColor *_buttonColor;
+    CGFloat _buttonFontSize;
 }
 
 @property (strong, nonatomic) UILabel *titleLabel;
@@ -80,11 +89,19 @@
 
 #pragma mark -- public
 
-+ (instancetype)alertControllerWithTitle:(NSString *)title message:(NSString *)message preferredStyle:(SLAlertControllerStyle)preferredStyle {
++ (instancetype)alertControllerWithTitle:(NSString *)title message:(NSString *)message alertStyle:(SLAlertControllerStyle)preferredStyle {
     
     SLAlertViewController *instance = [SLAlertViewController new];
     instance->_titleString = title;
     instance->_message = message;
+    instance->_preferredStyle = preferredStyle;
+    
+    //
+    CGFloat scaleWidth = 0.96;
+    if (preferredStyle == SLAlertControllerStyleAlert) {
+        scaleWidth = 0.75;
+    }
+    instance->_contentViewWidth = [UIScreen mainScreen].bounds.size.width * scaleWidth;
     
     return instance;
 }
@@ -109,11 +126,29 @@
     return self;
 }
 
+// 默认设置
+- (void)defaultSetting {
+    _contentMargin = UIEdgeInsetsMake(20, 20, 0, 20);
+    _contentViewWidth = [UIScreen mainScreen].bounds.size.width * 0.75;
+    _buttonHeight = 50;
+    
+    _titleColor = [UIColor colorWithRed:94/255.0 green:96/255.0 blue:102/255.0 alpha:1];
+    _titleFontSize = 20;
+    
+    _messageColor = [UIColor colorWithRed:94/255.0 green:96/255.0 blue:102/255.0 alpha:1];
+    _messageFontSize = 18;
+    
+    _buttonColor = [UIColor colorWithRed:0.09 green:0.52 blue:1.00 alpha:1.00];
+    _buttonFontSize = 18;
+    
+    _titleAlignment = NSTextAlignmentCenter;
+    _messageAlignment = NSTextAlignmentCenter;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self creatShadowView];
-    [self creatContentView];
+    [self creatContainerView];
     [self creatAllButtons];
     
     self.titleLabel.text = self.titleString;
@@ -128,8 +163,8 @@
     //更新标题的frame
     [self updateTitleLabelFrame];
     
-    //更新message的frame
-    [self updateMessageLabelFrame];
+    // 更新message的frame
+    [self updateMessageTVFrame];
     
     //更新按钮的frame
     [self updateAllButtonsFrame];
@@ -144,26 +179,19 @@
     [self showAppearAnimation];
 }
 
-// 默认设置
-- (void)defaultSetting {
-    _contentMargin = UIEdgeInsetsMake(20, 20, 0, 20);
-    _contentViewWidth = [UIScreen mainScreen].bounds.size.width * 0.75;
-    _buttonHeight = 45;
-    
-    _titleAlignment = NSTextAlignmentCenter;
-    _messageAlignment = NSTextAlignmentCenter;
-}
+#pragma mark -- 生产富文本
 
 // 内容富文本
 - (NSMutableAttributedString *)getMessageAttributeStringWithPlainString:(NSString *)message {
     // 设置属性
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    paragraphStyle.alignment = self.messageAlignment;
     // 设置行间距
     paragraphStyle.paragraphSpacing = 2; // 段落间距
     paragraphStyle.lineSpacing = 5;      // 行间距
     NSDictionary *attributes = @{
-        NSForegroundColorAttributeName:kDefaultTextColor,
-        NSFontAttributeName:[UIFont systemFontOfSize:kMessageFontSize],
+        NSForegroundColorAttributeName:_messageColor,
+        NSFontAttributeName:[UIFont systemFontOfSize:_messageFontSize],
         NSParagraphStyleAttributeName:paragraphStyle,
     };
     NSMutableAttributedString * attrStr = [[NSMutableAttributedString alloc] initWithString:message attributes:attributes];
@@ -178,7 +206,8 @@
 #pragma mark - 创建内部视图
 
 // 阴影层
-- (void)creatShadowView {
+- (void)creatContainerView {
+    // 阴影层
     _shadowView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, _contentViewWidth, 0)];
     _shadowView.layer.masksToBounds = NO;
     _shadowView.layer.shadowColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.25].CGColor;
@@ -187,10 +216,8 @@
     _shadowView.layer.shadowOffset = CGSizeMake(0, 8);
     
     [self.view addSubview:_shadowView];
-}
-
-// 内容层
-- (void)creatContentView {
+    
+    // 内容容器层
     _contentView = [[UIView alloc] initWithFrame:_shadowView.bounds];
     _contentView.backgroundColor = [UIColor colorWithRed:250 green:251 blue:252 alpha:1];
     _contentView.layer.cornerRadius = 10;
@@ -205,13 +232,25 @@
     NSMutableArray *btnArr = @[].mutableCopy;
     for (int i = 0; i < self.actions.count; i++) {
         
+        SLAlertAction *action = self.actions[i];
+        
         SLHighLightButton *btn = [SLHighLightButton new];
+        btn.enabled = action.enabled;
         btn.tag = 10 + i;
         btn.backgroundColor = [UIColor whiteColor];
-        btn.highlightedColor = [UIColor colorWithWhite:0.97 alpha:1];
-        btn.titleLabel.font = [UIFont boldSystemFontOfSize:15];
-        [btn setTitleColor:kDefaultButtonColor forState:UIControlStateNormal];
-        [btn setTitle:self.actions[i].title forState:UIControlStateNormal];
+        
+        if (action.enabled) {
+            btn.highlightedColor = [UIColor colorWithWhite:0.97 alpha:1];
+            [btn setTitleColor:_buttonColor forState:UIControlStateNormal];
+        } else {
+            btn.highlightedColor = [UIColor clearColor];
+            UIColor *disableColor = [UIColor colorWithRed:0.59 green:0.56 blue:0.53 alpha:1.00];
+            [btn setTitleColor:disableColor forState:UIControlStateNormal];
+        }
+        
+        btn.titleLabel.font = [UIFont boldSystemFontOfSize:_buttonFontSize];
+        
+        [btn setTitle:action.title forState:UIControlStateNormal];
         
         [btn addTarget:self action:@selector(didClickButton:) forControlEvents:UIControlEventTouchUpInside];
         [btnArr addObject:btn];
@@ -236,7 +275,7 @@
     }
 }
 
-- (void)updateMessageLabelFrame {
+- (void)updateMessageTVFrame {
     
     CGFloat messageTVWidth = _contentViewWidth - _contentMargin.left - _contentMargin.right;
     // 更新message的frame
@@ -255,8 +294,8 @@
         return;
     }
     
-    CGFloat firstButtonY = [self getFirstButtonY];
-    if (self.actions.count > 2) {
+    CGFloat firstButtonY = [self getActionButtonY];
+    if ((self.preferredStyle == SLAlertControllerStyleAlert && self.actions.count > 2) || self.preferredStyle == SLAlertControllerStyleActionSheet) {
         _buttonStack.frame = CGRectMake(0, firstButtonY, _contentViewWidth, _buttonHeight * self.actions.count);
         _buttonStack.axis = UILayoutConstraintAxisVertical;
     } else {
@@ -274,15 +313,21 @@
 
 - (void)updateShadowAndContentViewFrame {
     
-    CGFloat firstButtonY = [self getFirstButtonY];
+    CGFloat firstButtonY = [self getActionButtonY];
     
     CGFloat allButtonHeight;
     if (!self.actions.count) {
         allButtonHeight = 0;
-    } else if (self.actions.count < 3) {
-        allButtonHeight = _buttonHeight;
     } else {
-        allButtonHeight = _buttonHeight * self.actions.count;
+        if (self.preferredStyle == SLAlertControllerStyleAlert) {
+            if (self.actions.count < 3) {
+                allButtonHeight = _buttonHeight;
+            } else {
+                allButtonHeight = _buttonHeight * self.actions.count;
+            }
+        } else {
+            allButtonHeight = _buttonHeight * self.actions.count;
+        }
     }
     
     //更新警告框的frame
@@ -290,22 +335,26 @@
     frame.size.height = firstButtonY + allButtonHeight;
     _shadowView.frame = frame;
     
-    _shadowView.center = self.view.center;
+    if (self.preferredStyle == SLAlertControllerStyleAlert) {
+        _shadowView.center = self.view.center;
+    } else {
+        _shadowView.center = CGPointMake(self.view.center.x, [UIScreen mainScreen].bounds.size.height + _shadowView.frame.size.height/2.f);
+    }
     _contentView.frame = _shadowView.bounds;
 }
 
-- (CGFloat)getFirstButtonY {
+- (CGFloat)getActionButtonY {
     
-    CGFloat firstButtonY = 0.0;
+    CGFloat actionButtonY = 0.0;
     if (self.titleString.length) {
-        firstButtonY = CGRectGetMaxY(self.titleLabel.frame);
+        actionButtonY = CGRectGetMaxY(self.titleLabel.frame);
     }
     if (self.message.length) {
-        firstButtonY = CGRectGetMaxY(self.messageTV.frame);
+        actionButtonY = CGRectGetMaxY(self.messageTV.frame);
     }
-    firstButtonY += firstButtonY > 0 ? 15 : 0;
+    actionButtonY += actionButtonY > 0 ? 15 : 0;
     
-    return firstButtonY;
+    return actionButtonY;
 }
 
 #pragma mark -- 按钮事件响应
@@ -322,24 +371,47 @@
 #pragma mark -- show && hide actions
 
 - (void)showAppearAnimation {
-    _shadowView.alpha = 0;
-    _shadowView.transform = CGAffineTransformMakeScale(1.1, 1.1);
-    [UIView animateWithDuration:0.5 delay:0 usingSpringWithDamping:0.55 initialSpringVelocity:10 options:UIViewAnimationOptionCurveEaseIn animations:^{
-        self->_shadowView.transform = CGAffineTransformIdentity;
-        self->_shadowView.alpha = 1;
-    } completion:nil];
+    if (self.preferredStyle == SLAlertControllerStyleAlert) {
+        _shadowView.alpha = 0;
+        _shadowView.transform = CGAffineTransformMakeScale(1.1, 1.1);
+        [UIView animateWithDuration:0.5 delay:0 usingSpringWithDamping:0.55 initialSpringVelocity:10 options:UIViewAnimationOptionCurveEaseIn animations:^{
+            self->_shadowView.transform = CGAffineTransformIdentity;
+            self->_shadowView.alpha = 1;
+        } completion:nil];
+    } else {
+        [UIView animateWithDuration:0.5 delay:0 usingSpringWithDamping:0.9 initialSpringVelocity:2 options:UIViewAnimationOptionCurveLinear animations:^{
+            if (@available(iOS 11.0, *)) {
+                self->_shadowView.center = CGPointMake(self.view.center.x, [UIScreen mainScreen].bounds.size.height - self->_shadowView.frame.size.height/2.f - self.view.safeAreaInsets.bottom);
+            } else {
+                // Fallback on earlier versions
+                self->_shadowView.center = CGPointMake(self.view.center.x, [UIScreen mainScreen].bounds.size.height - self->_shadowView.frame.size.height/2.f - 20);
+            }
+
+        } completion:nil];
+    }
 }
 
 - (void)showDisappearAnimation {
-    [UIView animateWithDuration:0.3 animations:^{
-        for (UIView *subView in self->_contentView.subviews) {
-            subView.alpha = 0;
-        }
-        self->_contentView.alpha = 0;
+    if (self.preferredStyle == SLAlertControllerStyleAlert) {
+        [UIView animateWithDuration:0.3 animations:^{
+            for (UIView *subView in self->_contentView.subviews) {
+                if ([subView isKindOfClass:[UITextView class]]) {
+                    subView.hidden = YES;
+                }
+                subView.alpha = 0;
+            }
+            self->_contentView.alpha = 0;
+        } completion:^(BOOL finished) {
+            [self dismissViewControllerAnimated:NO completion:nil];
+        }];
+    } else {
         
-    } completion:^(BOOL finished) {
-        [self dismissViewControllerAnimated:NO completion:nil];
-    }];
+        [UIView animateWithDuration:0.25 animations:^{
+            self->_shadowView.center = CGPointMake(self.view.center.x, [UIScreen mainScreen].bounds.size.height + self->_shadowView.frame.size.height/2.f);
+        } completion:^(BOOL finished) {
+            [self dismissViewControllerAnimated:NO completion:nil];
+        }];
+    }
 }
 
 #pragma mark -- getter
@@ -358,10 +430,10 @@
 - (UILabel *)titleLabel {
     if (!_titleLabel) {
         _titleLabel = [UILabel new];
-        _titleLabel.textColor = kDefaultTextColor;
-        _titleLabel.font = [UIFont boldSystemFontOfSize:kTitleFontSize];
+        _titleLabel.textColor = _titleColor;
+        _titleLabel.font = [UIFont boldSystemFontOfSize:_titleFontSize];
         _titleLabel.text = self.titleString;
-        _titleLabel.textAlignment = self.titleAlignment;
+        _titleLabel.textAlignment = NSTextAlignmentCenter;
         [_contentView addSubview:_titleLabel];
     }
     return _titleLabel;
@@ -372,11 +444,11 @@
         _messageTV = [UITextView new];
         _messageTV.editable = NO;
         _messageTV.scrollEnabled = NO;
-        _messageTV.font = [UIFont systemFontOfSize:kMessageFontSize];
-        _messageTV.textColor = kDefaultTextColor;
+        _messageTV.textColor = _messageColor;
+        _messageTV.font = [UIFont systemFontOfSize:_messageFontSize];
         _messageTV.delegate = self;
-        _messageTV.attributedText = [self getMessageAttributeStringWithPlainString:self.message];
-        _messageTV.textAlignment = self.messageAlignment;
+        _messageTV.showsVerticalScrollIndicator = NO;
+        _messageTV.showsHorizontalScrollIndicator = NO;
         [_contentView addSubview:_messageTV];
     }
     return _messageTV;

@@ -19,7 +19,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-//    self.view.backgroundColor = [UIColor orangeColor];
+    self.view.backgroundColor = [UIColor orangeColor];
 }
 
 - (void)didReceiveMemoryWarning
@@ -29,7 +29,7 @@
 }
 
 - (IBAction)alert2Btns:(id)sender {
-    SLAlertViewController *alertVC = [SLAlertViewController alertControllerWithTitle:@"温馨提示" message:@"人脸采集失败，是否重新采集" preferredStyle:(SLAlertControllerStyleAlert)];
+    SLAlertViewController *alertVC = [SLAlertViewController alertControllerWithTitle:@"温馨提示" message:@"人脸采集失败，是否重新采集" alertStyle:SLAlertControllerStyleAlert];
     alertVC.messageAlignment = NSTextAlignmentLeft;
     
     SLAlertAction *cancel = [SLAlertAction actionWithTitle:@"取消" handler:^(SLAlertAction *action) {
@@ -44,7 +44,7 @@
 }
 
 - (IBAction)alert3Btns:(id)sender {
-    SLAlertViewController *alertVC = [SLAlertViewController alertControllerWithTitle:@"温馨提示" message:@"人脸采集失败，是否重新采集" preferredStyle:(SLAlertControllerStyleAlert)];
+    SLAlertViewController *alertVC = [SLAlertViewController alertControllerWithTitle:@"温馨提示" message:@"人脸采集失败，是否重新采集" alertStyle:(SLAlertControllerStyleAlert)];
     alertVC.messageAlignment = NSTextAlignmentLeft;
     
     SLAlertAction *action1 = [SLAlertAction actionWithTitle:@"取消" handler:^(SLAlertAction *action) {
@@ -65,7 +65,7 @@
 - (IBAction)attributeStringAction:(id)sender {
     
     NSString *message = @"电话：4008800114\n座机：010-82760152\n邮箱：sfrz_iam@cnpc.com.cn";
-    SLAlertViewController *alertVC = [SLAlertViewController alertControllerWithTitle:@"温馨提示" message:message preferredStyle:(SLAlertControllerStyleAlert)];
+    SLAlertViewController *alertVC = [SLAlertViewController alertControllerWithTitle:@"温馨提示" message:message alertStyle:SLAlertControllerStyleAlert];
     alertVC.messageAlignment = NSTextAlignmentLeft;
     
     SLAlertAttributeModel *model = [SLAlertAttributeModel new];
@@ -84,8 +84,45 @@
     [self presentViewController:alertVC animated:NO completion:nil];
 }
 
+- (IBAction)actionSheet:(id)sender {
+    SLAlertViewController *alertVC = [SLAlertViewController alertControllerWithTitle:@"温馨提示" message:@"人脸采集失败，是否重新采集" alertStyle:SLAlertControllerStyleActionSheet];
+//    alertVC.messageAlignment = NSTextAlignmentCenter;
+    
+    SLAlertAction *action1 = [SLAlertAction actionWithTitle:@"确定" handler:^(SLAlertAction *action) {
+    }];
+    [alertVC addAction:action1];
+    
+    SLAlertAction *action2 = [SLAlertAction actionWithTitle:@"取消" handler:^(SLAlertAction *action) {
+    }];
+    action2.enabled = NO;
+    [alertVC addAction:action2];
+    
+    [self presentViewController:alertVC animated:NO completion:nil];
+}
 
-- (IBAction)alertAction:(id)sender {
+- (IBAction)origin_alert:(id)sender {
+    UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"提示" message:@"展示内容" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
+    }];
+    action.enabled = NO;
+    [alertVC addAction:action];
+
+    UIAlertAction *action1 = [UIAlertAction actionWithTitle:@"确定1" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
+
+    }];
+    [alertVC addAction:action1];
+
+//    UIAlertAction *action2 = [UIAlertAction actionWithTitle:@"确定1" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
+//
+//    }];
+//    [alertVC addAction:action2];
+
+    [self presentViewController:alertVC animated:YES completion:^{
+    }];
+}
+
+
+- (IBAction)origin_actionSheet:(id)sender {
     UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"提示" message:@"展示内容" preferredStyle:UIAlertControllerStyleActionSheet];
     UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
     }];
@@ -97,10 +134,10 @@
     }];
     [alertVC addAction:action1];
 
-    UIAlertAction *action2 = [UIAlertAction actionWithTitle:@"确定1" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
-
-    }];
-    [alertVC addAction:action2];
+//    UIAlertAction *action2 = [UIAlertAction actionWithTitle:@"确定1" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
+//
+//    }];
+//    [alertVC addAction:action2];
 
     [self presentViewController:alertVC animated:YES completion:^{
     }];
