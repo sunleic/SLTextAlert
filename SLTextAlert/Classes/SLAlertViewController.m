@@ -133,13 +133,13 @@
     _buttonHeight = 50;
     
     _titleColor = [UIColor colorWithRed:94/255.0 green:96/255.0 blue:102/255.0 alpha:1];
-    _titleFontSize = 20;
+    _titleFontSize = 18;
     
     _messageColor = [UIColor colorWithRed:94/255.0 green:96/255.0 blue:102/255.0 alpha:1];
-    _messageFontSize = 18;
+    _messageFontSize = 16;
     
     _buttonColor = [UIColor colorWithRed:0.09 green:0.52 blue:1.00 alpha:1.00];
-    _buttonFontSize = 18;
+    _buttonFontSize = 17;
     
     _titleAlignment = NSTextAlignmentCenter;
     _messageAlignment = NSTextAlignmentCenter;
